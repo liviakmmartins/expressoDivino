@@ -1,0 +1,93 @@
+:root {
+    --marrom: #421b06;
+    --amarelo:#ffe1a6;
+    --amareloClaro:#f7ead1;
+    --amareloEscuro:#ffaa46;
+}
+body{
+    margin: 16px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background-color: #ffe1a6;
+    background-size: cover;
+    background-position: center right;
+    min-height: 100vh;
+}
+.material-symbols-outlined{
+    color: var(--marrom);
+    background-color: var(--amareloEscuro);
+    width: 20%;
+    padding: 8px;
+    margin: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
+}
+#voltar a{
+    text-decoration: none;
+    color: var(--marrom);
+}
+#logo{
+    text-align: center;
+    margin: 8px;
+}
+#logo img{
+    width: 200px;
+}
+#logo p{
+    color: var(--marrom);
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+section{
+    color: #421b06;
+    background-color: #f7ead1;
+    width: 70%;
+    max-width: 590px;
+    padding: 32px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.404);
+}
+section div{
+    padding: 8px;
+    background-color: #ffaa46;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.342);
+}
+footer{
+    font-size: 0.8em;
+    color: #421b06;
+    padding: 16px;
+    margin-top: 32px;
+    text-align: center;
+}
+@media screen and (min-width:768px){
+    body{
+        margin: auto;
+        background-image: url(../imagens/funcdo-cafe.jpg);
+    }
+    .material-symbols-outlined{
+        background-color: var(--amareloClaro);
+        transition: 0.2s ease;
+        width: 10%;
+    }
+    .material-symbols-outlined:hover{
+        transform: translate(0%, -2%);
+        transition: 0.2s ease;
+    }
+    footer{
+        color: white;
+    }
+}

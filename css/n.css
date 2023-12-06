@@ -1,0 +1,111 @@
+
+:root {
+    --marrom: #421b06;
+    --amarelo:#ffe1a6;
+    --amareloClaro:#f7ead1;
+    --amareloEscuro:#ffaa46;
+
+}
+
+body{
+    background-color: var(--amarelo);
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+#voltar{
+    padding: 16px;
+    margin: 16px;
+}
+#voltar a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--marrom);
+}
+#voltar a:hover{
+    text-decoration: underline;
+}
+
+#logo{
+    text-align: center;
+    margin: 8px;
+}
+#logo img{
+width: 100px;
+
+}
+
+/* p#personalizar{
+    color: var(--marrom);
+    text-align: center;
+    margin-bottom: 16px;
+}
+a{
+    text-decoration: none;
+    color: var(--amareloEscuro);
+} */
+
+h1{
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 16px;
+}
+header h1{
+    display: block;
+}
+
+main h1{
+    display: none;
+}
+h2{
+    font-size: 2em;
+    background-color: #ffaa46;
+
+}
+h3{
+    font-size: 1.5em;
+    text-decoration:underline;
+}
+#cafe, #acompanhamentos{
+    color: var(--marrom);
+    padding: 16px;
+}
+div{
+    line-height: 64px;
+}
+footer{
+    font-size: 0.8em;
+    background-color: var(--marrom);
+    color: white;
+    padding: 16px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+@media screen and (min-width:768px){
+ 
+    body{
+        background-color: var(--amareloEscuro);
+        background-image: url(../imagens/fundo\ cafe.jpg);
+        background-size: cover;
+        background-position: center right;
+    }
+    main{
+        background-color: var(--amarelo);
+        width: 50%;
+        margin: auto;
+        border-radius: 8px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.392);
+    }
+    header h1{
+        display: none;
+    }
+    main h1{
+        display: block;
+        padding-top: 8px;
+    }
+    #voltar a{
+        padding: 16px;
+        background-color: var(--amareloClaro);
+        border-radius: 8px;
+        box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.315);
+    }
+}

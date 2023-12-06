@@ -1,0 +1,138 @@
+:root {
+    --marrom: #421b06;
+    --amarelo:#ffe1a6;
+    --amareloClaro:#f7ead1;
+    --amareloEscuro:#ffaa46;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body{
+    background-color: var(--amareloEscuro);
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+header{
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    display: flex;
+}
+#logo img{
+    width: 100px;
+}
+#logo p{
+    color: var(--marrom);
+    margin-top: 56px;
+    font-size: 2em;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+}
+#home{
+    margin: 56px 8px 0px 0px;
+}
+#home a{
+    color: var(--marrom);
+    background-color: var(--amarelo);
+    padding: 16px;
+    margin-right: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.301);
+}
+h1{
+    color: var(--marrom);
+    padding: 16px 0px 56px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+div#pedidos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div#card{
+    background-color: var(--amareloClaro);
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.301);
+}
+#card div{
+    margin-bottom: 8px;
+
+}
+#card p{
+    padding: 4px;
+} 
+#card .material-symbols-outlined {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+div#aguardando_preparo p{
+    color: blue;
+
+}
+
+div#preparando p{
+    color: rgb(255, 123, 0);
+}
+
+div#pronto p{
+    color: green;
+}
+
+div#cancelado p{
+    color: red;
+}
+#valor_pequeno{
+    font-size: 0.6em;
+}
+#total{
+    margin: 4px 0px;
+    font-weight: bold;
+}
+/* #card div{
+    color: black;
+    padding: 16px;
+    width: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+} */
+#card a{
+    text-decoration: none;
+}
+button#status{
+    color: blue;
+    margin: 4px 0px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+footer{ 
+    color: var(--marrom);
+    padding: 16px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+@media screen and (min-width:768px){
+    #home a:hover{
+        transition: 0.2s ease;
+        filter:brightness(0.8);
+    }  
+}

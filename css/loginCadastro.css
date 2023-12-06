@@ -1,0 +1,141 @@
+:root {
+    --marrom: #421b06;
+    --amarelo:#ffe1a6;
+    --amareloClaro:#f7ead1;
+    --amareloEscuro:#ffaa46;
+    --verde:#97fc97;
+  }
+
+body{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin: 8px;
+    padding: 8px;
+    background-color: #ffaa46;
+}
+h1{
+    color: var(--marrom);
+    text-align: center;
+}
+
+header .material-symbols-outlined{
+    background-color: var(--amarelo);
+    width: 20%;
+    padding: 8px;
+    margin: 16px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
+}
+header a{
+    color: var(--marrom);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header > h1{
+    color: var(--marrom);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: right;
+}
+#logo{
+    text-align: center;
+}
+#logo img{
+    width: 200px;
+}
+#logo p{
+    color: var(--marrom);
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    font-weight: bold;
+}
+main{
+    padding: 8px;
+}
+.erro{
+    background-color: rgb(255, 186, 186);  
+    padding: 16px;  
+    height: 30%;
+    width: 40%;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.erro span{
+    color: red;
+    font-weight: bold;
+}
+form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 90%;
+    max-width: 500px;
+}
+/* input, button{
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.315);
+} */
+input, button{
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.315);
+}
+input{
+    background-color: var(--amarelo);
+    color: var(--marrom);
+}
+button{
+    margin-top: 8px;
+    background-color: var(--marrom);
+    color: white;
+}
+main > p{
+    color: var(--marrom);
+    margin-top: 8px;
+    text-align: center;
+
+}
+main > p > a{
+    text-decoration: none;
+    color: var(--amareloClaro);
+}
+
+footer{
+    font-size: 0.8em;
+    color: #421b06;
+    padding: 16px;
+    margin-top: 32px;
+    text-align: center;
+}
+
+
+@media screen and (min-width:768px){
+    header .material-symbols-outlined{
+        width: 10%;
+    }
+    header .material-symbols-outlined:hover{
+        transition: 0.2s ease;
+        filter:brightness(0.8);
+    }
+
+    button:hover{
+        transition: 0.2s ease;
+        filter:brightness(0.8);
+        cursor: pointer;
+    }
+    main > p > a:hover{
+        text-decoration: underline;
+        transition: 0.2s ease;
+        }
+    .erro{
+        width: 20%;
+    }
+    }
+    

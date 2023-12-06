@@ -1,0 +1,151 @@
+:root {
+    --marrom: #421b06;
+    --amarelo:#ffe1a6;
+    --amareloClaro:#f7ead1;
+    --amareloEscuro:#ffaa46;
+}
+body{
+    background-color: var(--amarelo);
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header a{
+    text-decoration: none;
+    color: var(--marrom);
+}
+
+header p{
+    display: none;
+}
+
+header .material-symbols-outlined{
+    background-color: var(--amareloEscuro);
+    width: 20%;
+    padding: 8px;
+    margin: 16px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356);
+}
+#logo{
+    text-align: center;
+    padding: 16px;
+}
+#logo img{
+    width: 200px;
+
+}
+#logo p{
+    color: var(--marrom);
+    margin-bottom: 16px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    font-weight: bold;
+}        
+h1{
+    color: --;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 16px;
+}
+h2{
+    background-color: var(--amareloEscuro);
+    margin-bottom: 16px;
+    padding: 8px;
+    font-size: 2em;
+    text-align: left;
+}
+h3{
+    color: var(--marrom);
+    margin-top: 24px;
+    font-size: 1.5em;
+    text-decoration:underline;
+}
+table{
+    border-collapse: separate;
+    border-spacing: 0px 16px;
+}
+tr{
+    margin-bottom: 8px;
+}
+h3,td{
+    padding: 0px 16px;
+}
+#cafe_quente td:nth-child(1){
+    padding-right: 92px;
+}
+#cafe_gelado td:nth-child(1){
+    padding-right: 64px;
+}
+#acomp_doce td:nth-child(1){
+    padding-right: 52px;
+}
+#acomp_salgado td:nth-child(1){
+    padding-right:104px;
+}
+.material-symbols-outlined{
+    padding-left: 32px;
+}
+.material-symbols-outlined{
+    padding-left: 32px;
+}
+.material-symbols-outlined a{
+    text-decoration: none;
+    color: #421b06;
+}
+.material-symbols-outlined a:hover{
+    color: #ffaa46;
+    transition: 0.2s;
+}
+footer{
+    color: var(--marrom);
+    font-size: 0.8em;
+    padding: 16px;
+    margin-top: 32px;
+    text-align: center;
+} 
+@media screen and (min-width:768px){
+    body{
+        background-color: var(--amarelo);
+        background-image: url(../imagens/funcdo-cafe.jpg);
+        background-size: cover;
+        background-position: center right;
+    }
+    header h1{
+        display: none;
+    }
+    header .material-symbols-outlined{
+        width: 10%;
+    }
+    header .material-symbols-outlined:hover{
+        filter:brightness(0.8);
+        transition: 0.2s ease;
+    }
+    main{
+        background-color: var(--amareloClaro);
+        width: 50%;
+        margin: auto;
+        border-radius: 8px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.392);
+    }
+    #logo{
+        padding: 40px;
+    }
+    main h1{
+        display: block;
+        padding-top: 8px;
+    }
+
+    #home:hover, #carrinho:hover{
+        transform: translate(0%, -2%);
+        transition: 0.2s e;
+
+    }
+    footer{
+        background-color: var(--marrom);
+        color: white;
+    }
+}
