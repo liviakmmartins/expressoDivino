@@ -61,7 +61,7 @@ div#pedidos{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-div#card{
+div.card{
     background-color: var(--amareloClaro);
     padding: 16px;
     margin: 16px;
@@ -70,42 +70,90 @@ div#card{
     border-radius: 8px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.301);
 }
-#card div{
+.card div{
     margin-bottom: 8px;
 
 }
-#card p{
+.card p{
     padding: 4px;
 } 
-#card .material-symbols-outlined {
+.card .material-symbols-outlined {
     font-size: 1.2em;
     font-weight: bold;
 }
+/* .botao{
+    border: 1px solid pink;
+    display:flex;
+    justify-content: space-between;
+} */
 
-div#aguardando_preparo p{
+div.aguardando_preparo p{
     color: blue;
 
 }
 
-div#preparando p{
-    color: rgb(255, 123, 0);
+div.preparando p{
+    color: orangered;
+}
+button.preparar{
+    color: orangered;
+    background-color:rgb(253, 218, 152);
+    width: 100%;
+    padding: 8px;
+    font-weight: bold;
+    border: 1px solid orangered;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
-div#pronto p{
+div.pronto p{
     color: green;
 }
+button.finalizar{
+    color: green;
+    background-color: rgb(191, 255, 191);
+    width: 100%;
+    padding: 8px;
+    font-weight: bold;
+    border: 1px solid green;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
 
-div#cancelado p{
+div.cancelado p{
     color: red;
 }
-#valor_pequeno{
+button.cancelar{
+    color: red;
+    background-color: rgb(250, 165, 165);
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    border: 1px solid red;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+}
+button.usuCancelar{
+    color: red;
+    background-color: rgb(250, 165, 165);
+    width: 100%;
+    padding: 8px;
+    font-weight: bold;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+.valor_pequeno{
     font-size: 0.6em;
 }
-#total{
+
+.total{
     margin: 4px 0px;
     font-weight: bold;
 }
-/* #card div{
+
+/* .card div{
     color: black;
     padding: 16px;
     width: 100%;
@@ -114,7 +162,7 @@ div#cancelado p{
     border-radius: 8px;
     box-sizing: border-box;
 } */
-#card a{
+.card a{
     text-decoration: none;
 }
 button#status{
@@ -131,8 +179,14 @@ footer{
 }
 
 @media screen and (min-width:768px){
-    #home a:hover{
+    #home a:hover,
+    button.cancelar:hover,
+    button.finalizar:hover,
+    button.preparar:hover,
+    button.usuCancelar:hover
+    {
         transition: 0.2s ease;
         filter:brightness(0.8);
-    }  
+        cursor: pointer;
+    } 
 }
